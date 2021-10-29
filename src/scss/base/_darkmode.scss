@@ -1,0 +1,88 @@
+.darkmode {
+  background-color: $grisOscuro;
+
+  p {
+    color: $blanco;
+  }
+  h1,
+  h2,
+  h3 {
+    color: $gris;
+  }
+
+  thead th {
+    color: #421414
+  }
+
+  th{
+    color: $gris;
+  }
+
+  .anuncios {
+    background-color: unset;
+    .card {
+      border: none;
+      -webkit-box-shadow: 10px 10px 5px -200px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 5px -200px rgba(0, 0, 0, 0.75);
+      box-shadow: 10px 10px 5px -200px rgba(0, 0, 0, 0.75);
+    }
+    span.precio {
+      color: darken($verde, 10) !important;
+    }
+
+    @include tablet {
+      .button_todos {
+        width: 20%;
+        margin: 2rem 0.9rem !important;
+      }
+    }
+  }
+
+  .contenedor-icon {
+    .icono-anuncio {
+      filter: invert(100%);
+    }
+  }
+
+  .footer {
+    background-color: darken($grisOscuro, 10);
+  }
+
+  .header-nosotros {
+    background-color: darken($grisOscuro, 10);
+  }
+
+  .texto-nosotros blockquote.blackquote {
+    color: $blanco;
+  }
+
+  .formulario fieldset {
+    border: 2px solid #e1e1e1;
+
+    legend,
+    label {
+      color: $blanco;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    select,
+    textarea {
+      background-color: darken($gris, 10);
+      border: none;
+    }
+  }
+
+  .check {
+    input[type="date"],
+    input[type="time"] {
+      background-color: darken($gris, 10);
+      border: none;
+    }
+
+    label {
+      color: $blanco;
+    }
+  }
+}

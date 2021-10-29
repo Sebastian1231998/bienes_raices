@@ -1,0 +1,125 @@
+.derecha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include tablet {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 2rem;
+  }
+
+  .button-dark {
+    filter: invert(100%);
+    width: 6rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    cursor: pointer;
+  }
+}
+
+.header {
+  
+  a {
+    margin: 0 0 -2rem;
+  }
+
+  background-image: url(../../build/img/header.jpg);
+  background-position: center left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include tablet {
+    height: calc(100vh - 30rem);
+  }
+
+  max-width: 100%;
+  width: 100%;
+  padding: 1rem 0 3rem 0;
+  .contenido-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
+
+    h1 {
+      text-align: center;
+      color: #ffffff;
+      padding: 0;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    @include tablet {
+      h1 {
+        text-align: left;
+
+        padding: 2rem 0.5rem;
+      }
+    }
+  }
+}
+
+.barra {
+  .navegacion {
+    display: none;
+
+    a {
+      color: #ffffff;
+      padding: 1rem;
+      font-size: 2rem;
+      margin: 0 0 -2rem;
+      &:hover {
+        color: $amarillo;
+        transition: ease-in-out 0.3s;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .navegacion {
+      display: block;
+    }
+    .navegacion.nav-responsive {
+      display: block;
+    }
+
+    .button_nav {
+      display: none;
+    }
+
+    img {
+      width: 50rem;
+    }
+  }
+
+  @media (min-width: 480px) {
+    .nav-responsive {
+      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1rem;
+    }
+  }
+}
+
+.contenedor-menu {
+  margin: 0 auto;
+  width: 14%;
+}
+.button_nav {
+  background-image: url(../../build/img/barras.svg);
+  height: 3rem;
+  width: 3rem;
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+  margin: 1rem 0 2rem 2.9rem;
+}

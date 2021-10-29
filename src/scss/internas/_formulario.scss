@@ -1,0 +1,105 @@
+.formulario {
+
+ 
+    fieldset{
+        border: 2px solid $negro;
+        padding: 2rem;
+        margin: 2rem 0;
+
+    }
+  
+
+
+input, textarea,select{
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+label{
+
+    font-size:1.5rem;
+     font-weight: $bold;
+     text-transform: uppercase;
+}
+
+
+textarea{
+    height: 15rem;
+}
+
+
+legend{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.checkbox{
+    width: auto;
+    
+
+}
+
+.email, .telefono {
+
+    display: none;
+}
+
+.form-button{
+    border: none;
+    background-color: $verde;
+    color: $blanco;
+    padding: 1.7rem 2rem;
+    margin: 0 2.5rem;
+    font-weight: bold;
+    font-size: 2rem;
+    width: 90%;
+}
+
+
+@include tablet{
+    .form-button{
+
+        
+        width: 10rem;
+        margin: 1rem 0;
+    }
+  
+
+}
+
+}
+
+
+
+
+
+
+  
+     
+    label{
+
+        font-size:2rem;
+        font-weight: bold;
+    }
+    .checkbox{
+       margin: 0 2rem;
+    }
+
+    input[type="date"], input[type="time"]{
+        width: 100%;
+        border: 1px solid #e1e1e1;
+        padding: 1rem;
+        border-radius: 1rem;
+
+    }
+    
+    
+
+
+.legend{
+    font-size: 2rem;
+    font-weight: bold;
+}
+

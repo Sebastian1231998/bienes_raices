@@ -1,0 +1,85 @@
+.header-nosotros{
+
+    background-color: $grisOscuro;
+    padding: 1rem 0;
+
+    
+}
+
+.main-nosotros{
+
+         @include tablet{
+
+             .contenido-nosotros{
+
+                @include grid(2,2rem)
+             }
+
+         }
+    
+}
+
+
+
+.texto-nosotros{
+
+
+
+    blockquote.blackquote{
+        font-size: 2rem;
+        font-weight: $bold;
+        text-align: left;
+        margin: 2rem 0 0 0;
+       
+   
+
+    } 
+
+}
+
+
+// slide 
+
+#principal {
+
+   
+    .carousel-item{
+     
+   
+        height: 60rem;
+        /* width: 100%; */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: transparent;
+    }
+
+    .carousel-content{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        h2{
+
+            color: $blanco;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 3rem;
+        }
+        p{
+            text-align: center;
+            margin-top: 2rem;
+            color: #e1e1e1;
+            -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+        }
+        .carousel-control-next-icon{
+            font-size: 4rem;
+        }
+       
+    }
+
+
+}
+

@@ -1,0 +1,50 @@
+.seccion-enlace-contacto {
+  margin: 2rem 0;
+
+}
+
+.hero-image-enlace {
+  
+  max-width: 100%;
+  height: calc(100vh - 60rem);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  .flex-enlace {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  h2 {
+    color: $blanco;
+    font-weight: $bold;
+    font-size: 3.5rem;
+  }
+
+  p {
+    color: $blanco;
+    text-align: center;
+  }
+
+  .button_enlace {
+    color: $blanco;
+    background: $amarillo;
+    padding: 1rem 1rem;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 3rem 0 0 0;
+    font-weight: $bold;
+    width: 20%;
+  }
+
+  @include tablet {
+    .button_enlace {
+      font-size: 2rem;
+    }
+  }
+}

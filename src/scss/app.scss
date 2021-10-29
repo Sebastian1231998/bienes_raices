@@ -1,0 +1,22 @@
+@import 'base/normalize';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/globales';
+@import 'base/utilidades';
+@import 'base/darkmode';
+
+
+// layout
+@import 'layout/header';
+@import 'layout/nosotros.scss';
+@import 'layout/anuncios.scss';
+@import 'layout/enlace.scss';
+@import 'layout/blog_index.scss';
+@import 'layout/footer.scss';
+
+// internas
+@import 'internas/nosotros.scss';
+@import 'internas/anuncios-page.scss';
+@import 'internas/formulario.scss';
+@import 'internas/calculadora.scss';
+@import 'internas/admin.scss';

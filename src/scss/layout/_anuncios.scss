@@ -1,0 +1,103 @@
+.anuncios {
+  background-color: #e1e1e11a;
+  .contenedor.button-contenedor {
+    max-width: 121rem;
+
+
+  }
+  .button-contenedor {
+    display: flex;
+    justify-content: flex-end;
+
+    .button_todos {
+      color: $blanco;
+      background: $verde;
+      padding: 1rem 1rem;
+      display: block;
+      text-align: center;
+      font-size: 2rem;
+      margin: 3rem 0 2rem 0;
+      font-weight: $bold;
+      width: 100%;
+    }
+
+    @include tablet {
+      .button_todos {
+        width: 20%;
+        margin: 2rem 3px;
+      }
+    }
+  }
+
+  @include tablet {
+    .grid-card {
+      @include grid(3, 3rem);
+    }
+  }
+
+  .card {
+    background-color: rgba(225, 225, 225, 0.6);
+    border: 1px solid #e1e1e1;
+    -webkit-box-shadow: -2px 4px 5px 0px rgba(225, 225, 225, 0.87);
+    -moz-box-shadow: -2px 4px 5px 0px rgba(225, 225, 225, 0.87);
+    box-shadow: -2px 4px 5px 0px rgba(225, 225, 225, 0.87);
+    margin-top: 2rem;
+    .body-card {
+      padding: 2.3rem;
+      p {
+        text-align: left;
+        font-weight: $bold;
+        height: 12rem;
+           
+      }
+      h3 {
+        padding: 0;
+        margin: 0;
+        height: 10rem;
+      }
+      
+      span.precio {
+        color: $verde;
+        font-weight: $black;
+        margin-bottom: 3rem;
+        font-size: 2rem;
+      }
+
+      .button_card {
+        color: $blanco;
+        background: $amarillo;
+        padding: 1rem 3rem;
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+        margin: 3rem 0 0 0;
+        font-weight: $bold;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.header-card {
+  @include tablet {
+    .img-anuncio {
+  
+      height: 200px;
+    }
+  }
+}
+.contenedor-icon {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0 4rem 0;
+
+  .icono-anuncio {
+    width: 50px;
+    height: 30px;
+  }
+}
+
+.subcointainer-flex {
+  display: flex;
+  justify-content: space-between;
+}

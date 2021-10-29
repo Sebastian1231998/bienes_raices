@@ -1,0 +1,33 @@
+.footer {
+  background-color: $grisOscuro;
+  padding: 3rem;
+  margin-top: 3rem;
+  p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: $blanco;
+  }
+
+  .navegacion a {
+    color: $blanco;
+    margin: 0 1rem;
+    font-size: 2rem;
+
+    &:hover {
+      color: $amarillo;
+      transition: ease-in-out 0.3s;
+    }
+  }
+}
+
+.nav-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+
+  @include tablet {
+    flex-direction: row;
+  }
+}
